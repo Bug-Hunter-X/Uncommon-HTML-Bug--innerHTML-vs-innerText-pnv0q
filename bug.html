@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside the div.
+  </div>
+
+  <script>
+    // Incorrect way to access element by ID
+    document.getElementById('myDiv').innerHTML = 'This is a test';
+
+    //Correct way to access element by ID and assign value
+    document.getElementById('myDiv').innerText = 'This is a test';
+  </script>
+</body>
+</html>
